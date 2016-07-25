@@ -1,5 +1,7 @@
 package Modelo;
 
+import java.awt.geom.Area;
+
 
 
 /**
