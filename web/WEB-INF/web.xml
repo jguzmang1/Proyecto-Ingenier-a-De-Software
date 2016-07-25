@@ -8,6 +8,10 @@
         <servlet-name>RegistrarEmpleados</servlet-name>
         <servlet-class>Servlets.RegistrarEmpleados</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegistrarArea</servlet-name>
+        <servlet-class>Servlets.RegistrarActividad</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>InicioSesion</servlet-name>
         <url-pattern>/iniciar</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>RegistrarEmpleados</servlet-name>
         <url-pattern>/nuevoempleado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrarArea</servlet-name>
+        <url-pattern>/nuevaarea</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

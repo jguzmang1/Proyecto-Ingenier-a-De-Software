@@ -5,7 +5,7 @@ package Modelo;
 /**
  * @author Juan Pablo Guzm�n G
  * @version 1.0
- * @created 14-Jul.-2016 7:58:34 p. m.
+ * @created 23-Jul.-2016 9:49:56 p. m.
  */
 public class Actividad  {
 
@@ -18,46 +18,6 @@ public class Actividad  {
 
 	}
 
-    public Actividad(int id, String Fecha, String Descripcion_Actividad, int Tiempo_actividad) {
-        this.id = id;
-        this.Fecha = Fecha;
-        this.Descripcion_Actividad = Descripcion_Actividad;
-        this.Tiempo_actividad = Tiempo_actividad;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getFecha() {
-        return Fecha;
-    }
-
-    public void setFecha(String Fecha) {
-        this.Fecha = Fecha;
-    }
-
-    public String getDescripcion_Actividad() {
-        return Descripcion_Actividad;
-    }
-
-    public void setDescripcion_Actividad(String Descripcion_Actividad) {
-        this.Descripcion_Actividad = Descripcion_Actividad;
-    }
-
-    public int getTiempo_actividad() {
-        return Tiempo_actividad;
-    }
-
-    public void setTiempo_actividad(int Tiempo_actividad) {
-        this.Tiempo_actividad = Tiempo_actividad;
-    }
-        
-
 	public void finalize() throws Throwable {
 
 	}
@@ -66,6 +26,34 @@ public class Actividad  {
 	}
 
 	public void validaHoraExtra(){
+
+	}
+
+	public int getid(){
+		return 0;
+	}
+
+	public String getFecha(){
+		return "";
+	}
+
+	public String getDescripcion_Actividad(){
+		return "";
+	}
+
+	public String getTiempo_Actividad(){
+		return "";
+	}
+
+	public void setFecha(){
+
+	}
+
+	public void setDescripcion_Actividad(){
+
+	}
+
+	public void setTiempo_actividad(){
 
 	}
 }//end Actividad 

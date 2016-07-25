@@ -56,10 +56,10 @@ public class Conexion {
      * @return un objeto de la clase conexion
      * @author Juan Pablo Guzmán G
      */
-        public static void main (String[] args){
+      /*  public static void main (String[] args){
          
             Conexion conect = new Conexion();
-        }
+        }*/
 }
     
    

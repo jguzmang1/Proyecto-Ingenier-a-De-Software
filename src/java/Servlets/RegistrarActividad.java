@@ -5,7 +5,6 @@
  */
 package Servlets;
 
-import Data.Consultas;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -17,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Juan Pablo Guzmán G
  */
-public class RegistrarEmpleados extends HttpServlet {
+public class RegistrarActividad extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,25 +31,6 @@ public class RegistrarEmpleados extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        
-        String identificacion = request.getParameter("identificacion");
-        String nombre = request.getParameter("nombre");
-        String apellido = request.getParameter("apellido");
-        String area = request.getParameter("area");
-        String departamento = request.getParameter("departamento");
-        String cargo = request.getParameter("cargo");
-        String salario = request.getParameter("salario");
-        String estado = request.getParameter("estado");
-        String rol = request.getParameter("rol");
-        String contraseña = request.getParameter("contrasena");
-        
-        Consultas co = new Consultas();
-        if(co.registrar(identificacion, nombre, apellido, area, departamento, cargo, salario, estado, rol, contraseña)){
-            response.sendRedirect("index.jsp");
-        }else{
-            response.sendRedirect("registro.jsp");
-        }  
- 
         
     }
 
